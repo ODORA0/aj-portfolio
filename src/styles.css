@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+
+:root { --bg: 255 255 255; --fg: 15 23 42; --card: 248 250 252; }
+.dark { --bg: 10 10 10; --fg: 245 245 245; --card: 23 23 23; }
+
+body { background-color: rgb(var(--bg)); color: rgb(var(--fg)); }
+
+.gradient-text { @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-500 to-brand-200; }
+.card {
+  @apply rounded-2xl border border-black/5 dark:border-white/10 shadow-xl bg-[rgb(var(--card))]/100 backdrop-blur
+         transition-transform hover:-translate-y-0.5 hover:shadow-2xl;
+}
+.badge { @apply px-3 py-1 rounded-full border border-black/5 dark:border-white/10 bg-black/5 dark:bg-white/5 text-sm; }
+.container-2xl { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+.section { @apply py-16 sm:py-24; }
+.btn {
+  @apply inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-black/5 dark:border-white/10
+         hover:bg-black/5 dark:hover:bg-white/5 transition-colors;
+}
+.btn-primary { @apply bg-brand-600 text-white hover:bg-brand-500 border-transparent; }
+.link-muted { @apply text-neutral-700 dark:text-neutral-300 hover:underline underline-offset-4; }

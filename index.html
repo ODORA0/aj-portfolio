@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AJAL ODORA JONATHAN — Full-Stack Software Engineer Portfolio">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Ajal Odora Jonathan | Full-Stack Engineer</title>
+    <script>
+      (function() {
+        try {
+          const stored = localStorage.getItem('theme');
+          const mql = window.matchMedia('(prefers-color-scheme: dark)');
+          const isDark = stored ? stored === 'dark' : mql.matches;
+          if (isDark) document.documentElement.classList.add('dark');
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
