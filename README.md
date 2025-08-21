@@ -26,4 +26,4 @@ npm run dev
 npm run build
 npm run preview
 ```
-# I think I will deploy the `dist/` folder to Netlify, Vercel, or GitHub Pages later LOL.
+ I think I will deploy the `dist/` folder to Netlify, Vercel, or GitHub Pages later LOL.
